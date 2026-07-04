@@ -1,0 +1,116 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+div.gen {
+    flex-direction: column;
+}
+div.gen br {
+    display: none; 
+}
+
+div.gen label:first-child {
+    margin-bottom: 10px;
+}
+
+.gen div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.gen input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+/* Highlight input field on focus */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: #4caf50;
+}
+
+/* Button container alignment */
+.butt {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 0;
+}
+
+/* Universal button styling */
+button, 
+input[type="submit"], 
+input[type="reset"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Submit button specific style */
+button[type="submit"], 
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+}
+
+button[type="submit"]:hover, 
+input[type="submit"]:hover {
+    background-color: #439a46;
+}
+
+/* Reset button specific style */
+button[type="reset"], 
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+button[type="reset"]:hover, 
+input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
